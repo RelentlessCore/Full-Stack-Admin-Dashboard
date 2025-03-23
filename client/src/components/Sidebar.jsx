@@ -13,7 +13,6 @@ import {
   useTheme,
 } from "@mui/material";
 import {
-  SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
@@ -34,62 +33,20 @@ import FlexBetween from "./FlexBetween";
 import profileImage from "assets/profile.jpeg";
 
 const navItems = [
-  {
-    text: "Dashboard",
-    icon: <HomeOutlined />,
-  },
-  {
-    text: "Client Facing",
-    icon: null,
-  },
-  {
-    text: "Products",
-    icon: <ShoppingCartOutlined />,
-  },
-  {
-    text: "Customers",
-    icon: <Groups2Outlined />,
-  },
-  {
-    text: "Transactions",
-    icon: <ReceiptLongOutlined />,
-  },
-  {
-    text: "Geography",
-    icon: <PublicOutlined />,
-  },
-  {
-    text: "Sales",
-    icon: null,
-  },
-  {
-    text: "Overview",
-    icon: <PointOfSaleOutlined />,
-  },
-  {
-    text: "Daily",
-    icon: <TodayOutlined />,
-  },
-  {
-    text: "Monthly",
-    icon: <CalendarMonthOutlined />,
-  },
-  {
-    text: "Breakdown",
-    icon: <PieChartOutlined />,
-  },
-  {
-    text: "Management",
-    icon: null,
-  },
-  {
-    text: "Admin",
-    icon: <AdminPanelSettingsOutlined />,
-  },
-  {
-    text: "Performance",
-    icon: <TrendingUpOutlined />,
-  },
+  { text: "Dashboard", icon: <HomeOutlined /> },
+  { text: "Client Facing", icon: null },
+  { text: "Products", icon: <ShoppingCartOutlined /> },
+  { text: "Customers", icon: <Groups2Outlined /> },
+  { text: "Transactions", icon: <ReceiptLongOutlined /> },
+  { text: "Geography", icon: <PublicOutlined /> },
+  { text: "Sales", icon: null },
+  { text: "Overview", icon: <PointOfSaleOutlined /> },
+  { text: "Daily", icon: <TodayOutlined /> },
+  { text: "Monthly", icon: <CalendarMonthOutlined /> },
+  { text: "Breakdown", icon: <PieChartOutlined /> },
+  { text: "Management", icon: null },
+  { text: "Admin", icon: <AdminPanelSettingsOutlined /> },
+  { text: "Performance", icon: <TrendingUpOutlined /> },
 ];
 
 const Sidebar = ({
@@ -121,20 +78,22 @@ const Sidebar = ({
             "& .MuiDrawer-paper": {
               color: theme.palette.secondary[200],
               backgroundColor: theme.palette.background.alt,
-              boxSixing: "border-box",
+              boxSizing: "border-box",
               borderWidth: isNonMobile ? 0 : "2px",
               width: drawerWidth,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
             },
           }}
         >
-          <Box width="100%">
+          {/* TOP */}
+          <Box>
             <Box m="1.5rem 2rem 2rem 3rem">
               <FlexBetween color={theme.palette.secondary.main}>
-                <Box display="flex" alignItems="center" gap="0.5rem">
-                  <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
-                  </Typography>
-                </Box>
+                <Typography variant="h4" fontWeight="bold">
+                  ECOMVISION
+                </Typography>
                 {!isNonMobile && (
                   <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
                     <ChevronLeft />
@@ -142,6 +101,7 @@ const Sidebar = ({
                 )}
               </FlexBetween>
             </Box>
+
             <List>
               {navItems.map(({ text, icon }) => {
                 if (!icon) {
@@ -152,7 +112,6 @@ const Sidebar = ({
                   );
                 }
                 const lcText = text.toLowerCase();
-
                 return (
                   <ListItem key={text} disablePadding>
                     <ListItemButton
@@ -193,9 +152,19 @@ const Sidebar = ({
             </List>
           </Box>
 
-          <Box position="absolute" bottom="2rem">
+          {/* ✅ Sticky Bottom Profile Section (Final Version) */}
+          <Box>
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+            <Box
+              display="flex"
+              alignItems="center"
+              gap="1rem"
+              p="1.5rem 2rem"
+              sx={{
+                overflow: "hidden",
+                flexWrap: "nowrap",
+              }}
+            >
               <Box
                 component="img"
                 alt="profile"
@@ -203,9 +172,17 @@ const Sidebar = ({
                 height="40px"
                 width="40px"
                 borderRadius="50%"
-                sx={{ objectFit: "cover" }}
+                sx={{ objectFit: "cover", flexShrink: 0 }}
               />
-              <Box textAlign="left">
+              <Box
+                textAlign="left"
+                sx={{
+                  minWidth: 0,
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+              >
                 <Typography
                   fontWeight="bold"
                   fontSize="0.9rem"
@@ -220,13 +197,7 @@ const Sidebar = ({
                   {user.occupation}
                 </Typography>
               </Box>
-              <SettingsOutlined
-                sx={{
-                  color: theme.palette.secondary[300],
-                  fontSize: "25px ",
-                }}
-              />
-            </FlexBetween>
+            </Box>
           </Box>
         </Drawer>
       )}

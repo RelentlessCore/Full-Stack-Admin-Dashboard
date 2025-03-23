@@ -90,4 +90,8 @@ From the frontend to database modeling, this project demonstrates full-stack pro
 
 ---
 
+<<<<<<< Updated upstream
 Built for **speed, security, and seamless user experiences.** 🚀🔥  
+=======
+Built for **speed, security, and seamless user experiences.** 🚀🔥  
+>>>>>>> Stashed changes
