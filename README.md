@@ -14,7 +14,6 @@ With fully responsive design, interactive charts, and server-driven data handlin
 ✅ **Real-Time Data Visualization** – Line, Pie, and Geo charts with Nivo.js.  
 ✅ **Server-Side Pagination** – Fast table loads with MongoDB + RTK Query.  
 ✅ **Dark/Light Mode UI** – Dynamic theme toggle using Material UI.  
-✅ **Role-Based Data Access** – Modular routes and dynamic data rendering.  
 
 📌 All data and layout are customizable, scalable, and production-ready.
 
@@ -41,7 +40,7 @@ With fully responsive design, interactive charts, and server-driven data handlin
 
 Before building the API and database logic, the entire backend was structured using an **Entity Relationship Diagram (ERD)**. This helped define clear references, normalized collections, and smart aggregation pipelines.
 
-![ER Diagram](https://github.com/your-github-username/your-repo-name/blob/main/path-to-image/chrome_HzU44CHqOb.png)
+![Image](https://github.com/user-attachments/assets/4901a1db-c15b-4b91-b480-edada18e00f8)
 
 > The ERD visualizes how `Users`, `Transactions`, `Products`, `Stats`, and `AffiliateSales` interact with each other using references and MongoDB relations.
 
