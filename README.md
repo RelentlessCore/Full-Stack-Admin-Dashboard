@@ -40,7 +40,7 @@ With fully responsive design, interactive charts, and server-driven data handlin
 
 Before building the API and database logic, the entire backend was structured using an **Entity Relationship Diagram (ERD)**. This helped define clear references, normalized collections, and smart aggregation pipelines.
 
-![Image](https://github.com/user-attachments/assets/4901a1db-c15b-4b91-b480-edada18e00f8)
+### ![Image](https://github.com/user-attachments/assets/4901a1db-c15b-4b91-b480-edada18e00f8)
 
 > The ERD visualizes how `Users`, `Transactions`, `Products`, `Stats`, and `AffiliateSales` interact with each other using references and MongoDB relations.
 
@@ -50,25 +50,34 @@ Before building the API and database logic, the entire backend was structured us
 
 _You’ll find visual examples here once uploaded, such as:_
 
-📊 **Dashboard Overview**  
+### 📊 **Dashboard Overview**  
 ![Image](https://github.com/user-attachments/assets/3218c3e6-c6be-4475-80ee-2095b8a34bed)
-📦 **Products Table**  
+
+### 📦 **Products Table**  
 ![Image](https://github.com/user-attachments/assets/32150ecf-ad49-4a4a-b94c-3128387a3146)
-👥 **Customers List**  
+
+### 👥 **Customers List**  
 ![Image](https://github.com/user-attachments/assets/f4cc422d-f7c3-404c-a02a-9e62650d3b29)
-💰 **Transactions with Server Pagination**  
+
+### 💰 **Transactions with Server Pagination**  
 ![Image](https://github.com/user-attachments/assets/90c8d4e3-cec5-4ae9-a197-54616897b2b1)
-🌍 **Geo Chart of Users by Country**  
+
+### 🌍 **Geo Chart of Users by Country**  
 ![Image](https://github.com/user-attachments/assets/82ec1e62-29b6-4c7e-bf25-604b6c8444f8)
-📈 **Overview Page**  
+
+### 📈 **Overview Page**  
 ![Image](https://github.com/user-attachments/assets/9b2c3cf6-4261-41e1-af53-f9c6a670990b)
-📅 **Revenue Line Chart (Daily Sales)**  
+
+### 📅 **Revenue Line Chart (Daily Sales)**  
 ![Image](https://github.com/user-attachments/assets/f3c10aad-5113-4872-a217-04390e964f08)
-📆 **Revenue Line Chart (Monthly Sales)**  
+
+### 📆 **Revenue Line Chart (Monthly Sales)**  
 ![Image](https://github.com/user-attachments/assets/f3c10aad-5113-4872-a217-04390e964f08)
-📉 Sales Breakdown (Pie)
+
+### 📉 Sales Breakdown (Pie)
 ![Image](https://github.com/user-attachments/assets/c915eac5-21b1-4c5f-9f3f-7f6889717f4b)
-🧑‍💼 **Admin Panel with Roles & Access**  
+
+### 🧑‍💼 **Admin Panel with Roles & Access**  
 ![Image](https://github.com/user-attachments/assets/19879e58-159d-44fc-9344-62bd528d6da4)
 
 ---
