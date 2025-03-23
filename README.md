@@ -4,15 +4,17 @@ A modern, full-stack admin analytics platform designed to provide real-time busi
 
 With fully responsive design, interactive charts, and server-driven data handling, this dashboard is perfect for managing and visualizing business operations across departments.
 
+---
+
 ## ✨ Features
 
-✅ Fully Responsive Admin Dashboard** – Optimized for mobile, tablet, and desktop.
-✅ Advanced Data Modeling** – Built with Mongoose schemas and entity relationships.
-✅ MongoDB Aggregation** – Complex calculations done directly in the database.
-✅ Real-Time Data Visualization** – Line, Pie, and Geo charts with Nivo.js.
-✅ Server-Side Pagination** – Fast table loads with MongoDB + RTK Query.
-✅ Dark/Light Mode UI** – Dynamic theme toggle using Material UI.
-✅ Role-Based Data Access** – Modular routes and dynamic data rendering.
+✅ **Fully Responsive Admin Dashboard** – Optimized for mobile, tablet, and desktop.  
+✅ **Advanced Data Modeling** – Built with Mongoose schemas and entity relationships.  
+✅ **MongoDB Aggregation** – Complex calculations done directly in the database.  
+✅ **Real-Time Data Visualization** – Line, Pie, and Geo charts with Nivo.js.  
+✅ **Server-Side Pagination** – Fast table loads with MongoDB + RTK Query.  
+✅ **Dark/Light Mode UI** – Dynamic theme toggle using Material UI.  
+✅ **Role-Based Data Access** – Modular routes and dynamic data rendering.  
 
 📌 All data and layout are customizable, scalable, and production-ready.
 
@@ -20,65 +22,54 @@ With fully responsive design, interactive charts, and server-driven data handlin
 
 ## 🔥 Tech Stack
 
-🖥️ **Frontend**
+### 🖥️ Frontend  
+- React 18 + Redux Toolkit  
+- Material UI (MUI v5)  
+- Nivo Charts (Line, Pie, Geo, Bar)  
+- MUI Data Grid (Paginated, sortable tables)  
+- React Router DOM v6  
 
--React 18 + Redux Toolkit
--Material UI (MUI v5)
--Nivo Charts (Line, Pie, Geo, Bar)
--MUI Data Grid (Paginated, sortable tables)
--React Router DOM v6
+### 🔧 Backend  
+- Node.js + Express.js  
+- MongoDB (via Mongoose ODM)  
+- Dotenv (Environment variables)  
+- JWT (optional)  
 
-🔧 **Backend**
+---
 
-Node.js + Express.js
-MongoDB (via Mongoose ODM)
-Dotenv (Environment variables)
-JWT (optional)
+## 🧩 Data Modeling – ER Diagram
+
+Before building the API and database logic, the entire backend was structured using an **Entity Relationship Diagram (ERD)**. This helped define clear references, normalized collections, and smart aggregation pipelines.
+
+![ER Diagram](https://github.com/your-github-username/your-repo-name/blob/main/path-to-image/chrome_HzU44CHqOb.png)
+
+> The ERD visualizes how `Users`, `Transactions`, `Products`, `Stats`, and `AffiliateSales` interact with each other using references and MongoDB relations.
 
 ---
 
 ## 📸 Screenshots
 
-You’ll find visual examples here once uploaded, such as:
+_You’ll find visual examples here once uploaded, such as:_
 
-📊 Dashboard Overview
-
-
-
-📦 Products Table
-
-
-
-👥 Customers List
-
-
-
-💰 Transactions with Server Pagination
-
-
-
-🌍 Geo Chart of Users by Country
-
-
-
-📈 Revenue Line Chart (Monthly/Daily)
-
-
-
-🧑‍💼 Admin Panel with Roles & Access
-
-
-
-📉 Performance Tracking
+📊 **Dashboard Overview**  
+📦 **Products Table**  
+👥 **Customers List**  
+💰 **Transactions with Server Pagination**  
+🌍 **Geo Chart of Users by Country**  
+📈 **Revenue Line Chart (Monthly/Daily)**  
+🧑‍💼 **Admin Panel with Roles & Access**  
+📉 **Performance Tracking**
 
 ---
 
 ## 🚀 Why This Stands Out
 
-This isn’t just another admin template—it’s a powerful, full-stack analytics platform designed to help businesses track KPIs, performance, and operations efficiently. Built with efficiency, scalability, and real-world usability in mind, it ensures clear insights, intelligent data flows, and a beautiful, clean UI.
+This isn’t just another admin template — it’s a **powerful, full-stack analytics platform** designed to help businesses **track KPIs, performance, and operations** efficiently.  
 
-With server-side data fetching, MongoDB aggregation, and a snappy MUI interface, this platform redefines how you build and showcase admin dashboards in the modern web stack.
+Built with **MongoDB aggregation pipelines**, **Redux Toolkit Query**, and **clean MUI components**, this system offers a fast, scalable way to visualize backend data in real-time. Whether you're managing users, transactions, or revenue analytics — everything flows through a highly customizable dashboard with clear data separation and secure access layers.  
+
+From the frontend to database modeling, this project demonstrates full-stack proficiency and production-level design thinking.
 
 ---
 
-Built for **speed, security, and seamless user experiences.** 🚀🔥
+Built for **speed, security, and seamless user experiences.** 🚀🔥  
