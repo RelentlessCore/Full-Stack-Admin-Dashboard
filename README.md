@@ -48,8 +48,6 @@ Before building the API and database logic, the entire backend was structured us
 
 ## 📸 Screenshots
 
-_You’ll find visual examples here once uploaded, such as:_
-
 ### 📊 **Dashboard Overview**  
 ![Image](https://github.com/user-attachments/assets/3218c3e6-c6be-4475-80ee-2095b8a34bed)
 
