@@ -70,7 +70,7 @@ Before building the API and database logic, the entire backend was structured us
 ![Image](https://github.com/user-attachments/assets/f3c10aad-5113-4872-a217-04390e964f08)
 
 ### 📆 **Revenue Line Chart (Monthly Sales)**  
-![Image](https://github.com/user-attachments/assets/f3c10aad-5113-4872-a217-04390e964f08)
+![Image](https://github.com/user-attachments/assets/0ceca289-5b17-4907-8529-212c07246195)
 
 ### 📉 Sales Breakdown (Pie)
 ![Image](https://github.com/user-attachments/assets/c915eac5-21b1-4c5f-9f3f-7f6889717f4b)
