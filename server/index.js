@@ -48,6 +48,9 @@ const PORT = process.env.PORT || 9000;
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
+app.get("/ping", (req, res) => {
+  res.status(200).send("Pong");
+});
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
